@@ -22,7 +22,7 @@ node 'lin-test.rackstage.co.uk' {
 		install_dirname => 'vhosts/lin-test.rackstage.co.uk/public_html',
 		install_postcommand => 'mv /var/www/vhosts/lin-test.rackstage.co.uk/public_html/wordpress/* /var/www/vhosts/lin-test.rackstage.co.uk/public_html/',
 		web_server => 'apache',
-		web_server_template => 'example-resources/wordpress/apache_vhost_conf.erb',
+		web_server_template => 'exercise-resources/wordpress/apache_vhost_conf.erb',
 		web_virtualhost => 'wordpress',
 		options => {
 			'ServerName' => 'cms-deploy-test-lin',
